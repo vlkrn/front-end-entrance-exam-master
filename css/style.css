@@ -1,0 +1,119 @@
+@import 'languages.css';
+@import 'experience.css';
+@import 'tools.css';
+@import 'education.css';
+@import 'interests.css';
+@import 'name-block.css';
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px 25px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.row > * {
+  flex-grow: 1;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+
+#download-pdf {
+  position: fixed;
+  top: 1px;
+  right: 1px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+}
+
+#download-pdf img {
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#download-pdf img:hover {
+  background: lightgray radial-gradient(circle, transparent 1%, lightgray 1%)
+    center/15000%;
+}
+
+#download-pdf img:active {
+  background-color: silver;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.profile-img {
+  flex-grow: 0;
+}
+.profile-img img {
+  height: 100%;
+}
+
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  background: rgb(0, 0, 0);
+  flex-grow: 1;
+}
+
+[data-value] {
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+[data-value]:hover {
+  background: lightgray radial-gradient(circle, transparent 1%, lightgray 1%)
+  center/15000%;
+}
+
+[data-value]:active {
+  background-color: silver;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-wrap: wrap;
+  }
+}

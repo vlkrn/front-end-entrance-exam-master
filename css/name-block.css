@@ -1,0 +1,26 @@
+.name-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 12px;
+  background: rgb(240, 240, 240);
+  padding: 12px;
+  flex-grow: 0;
+  font-weight: 500;
+}
+
+.name-block__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name-block__name {
+  font-size: 1.4rem;
+}
+
+.name-block__role {
+  color: rgb(92, 92, 92);
+  font-size: 1.2rem;
+}
