@@ -1,5 +1,3 @@
-import html2pdf from 'html2pdf.js';
-
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('download-pdf').addEventListener('click', () => {
     const element = document.getElementById('container');
